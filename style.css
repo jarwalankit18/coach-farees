@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -9,18 +14,22 @@ body {
     color: #2c2c2c;
     line-height: 1.6;
 }
+body {
+    padding-top: 80px;
+}
 
 /* Navbar */
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #6b1d1d;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 30px;
     z-index: 1000;
 }
 
@@ -121,11 +130,16 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 15px;
+        text-align: center;
     }
 
     .nav-links {
         margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px;
     }
 
     .card-container {
@@ -163,3 +177,4 @@ footer {
 .application-form button:hover {
     background-color: #8b2e2e;
 }
+
