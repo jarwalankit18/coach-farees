@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Apply | Coach Farees</title>
+    <title>Contact | Coach Farees</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,22 +12,68 @@
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="courses.html">Upcoming Courses</a>
-        <a href="forms.html">Apply</a>
+        <a href="form.html">Contact</a>
         <a href="https://t.me/coachfarees" target="_blank">Telegram</a>
     </div>
 </nav>
 
 <section class="section" style="margin-top:120px;">
-    <h2>Application Form</h2>
+    <h2>Enquiry Form</h2>
 
-    <form class="application-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Optional Subject">
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Why do you want mentorship?" rows="4"></textarea>
-        <button type="submit">Submit Application</button>
+    <form action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST" class="application-form">
+
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Subject line in email -->
+        <input type="hidden" name="_subject" value="New Enquiry from Coach Farees Website">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="tel" 
+               name="mobile" 
+               placeholder="10 Digit Mobile Number" 
+               pattern="[0-9]{10}" 
+               required>
+
+        <input type="email" name="email" placeholder="Email (Optional)">
+
+        <textarea name="message" 
+                  placeholder="Your Query" 
+                  rows="4"></textarea>
+
+        <button type="submit">Submit Enquiry</button>
     </form>
+
+    <br><br>
+
+    <div class="contact-direct">
+        <h3>Or Contact Directly</h3>
+        <a href="https://t.me/coachfarees" class="btn" target="_blank">
+            Message on Telegram
+        </a>
+        <br><br>
+        <a href="tel:YOURNUMBERHERE" class="btn">
+            Call Directly
+        </a>
+    </div>
+
+</section>
+
+<section class="section alt">
+    <h2>Serious Study Lounge</h2>
+
+    <div class="card special-card">
+        <h3>Exclusive Mentorship Ecosystem</h3>
+        <p>
+            Serious Study Lounge is a focused online environment for disciplined UPSC aspirants.
+            Includes peer discussion, structured answer writing practice,
+            mentor reviews, and performance tracking.
+        </p>
+        <p>
+            Designed for aspirants committed to consistent improvement.
+        </p>
+    </div>
 </section>
 
 <footer>
