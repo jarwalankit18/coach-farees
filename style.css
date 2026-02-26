@@ -177,4 +177,13 @@ footer {
 .application-form button:hover {
     background-color: #8b2e2e;
 }
+.contact-direct {
+    text-align: center;
+}
+
+.special-card {
+    background-color: #fff8f0;
+    border-left: 5px solid #6b1d1d;
+    padding: 30px;
+}
 
