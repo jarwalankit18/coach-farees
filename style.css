@@ -10,7 +10,7 @@ html {
 body {
     margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #f5efe6;
+    background-color: #eef8ff;
     color: #2c2c2c;
     line-height: 1.6;
 }
@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6b1d1d;
+    background-color: #4aa7d8;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -34,8 +34,15 @@ body {
 }
 
 .navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 48px;
+    width: auto;
+    border-radius: 6px;
+    display: block;
 }
 
 .nav-links a {
@@ -51,7 +58,7 @@ body {
 
 /* Hero */
 .hero {
-    background-color: #8b2e2e;
+    background-color: #79c4ea;
     color: white;
     text-align: center;
     padding: 140px 20px 100px;
@@ -84,8 +91,8 @@ body {
 }
 
 .btn {
-    background-color: #f5efe6;
-    color: #6b1d1d;
+    background-color: #eef8ff;
+    color: #1e6a92;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 4px;
@@ -93,7 +100,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #e6dccf;
+    background-color: #d7ecf8;
 }
 
 /* Sections */
@@ -110,7 +117,7 @@ body {
 
 .section h2 {
     margin-bottom: 20px;
-    color: #6b1d1d;
+    color: #1e6a92;
 }
 
 /* Cards */
@@ -122,7 +129,7 @@ body {
 }
 
 .card {
-    background-color: #f9f6f2;
+    background-color: #f4fbff;
     padding: 25px;
     width: 260px;
     border-radius: 6px;
@@ -131,12 +138,12 @@ body {
 
 .card h3 {
     margin-top: 0;
-    color: #6b1d1d;
+    color: #1e6a92;
 }
 
 /* Footer */
 footer {
-    background-color: #6b1d1d;
+    background-color: #4aa7d8;
     color: white;
     text-align: center;
     padding: 20px;
@@ -183,7 +190,7 @@ footer {
 .application-form button {
     margin-top: 15px;
     padding: 12px;
-    background-color: #6b1d1d;
+    background-color: #2d89bd;
     color: white;
     border: none;
     cursor: pointer;
@@ -191,15 +198,15 @@ footer {
 }
 
 .application-form button:hover {
-    background-color: #8b2e2e;
+    background-color: #4aa7d8;
 }
 .contact-direct {
     text-align: center;
 }
 
 .special-card {
-    background-color: #fff8f0;
-    border-left: 5px solid #6b1d1d;
+    background-color: #edf8ff;
+    border-left: 5px solid #4aa7d8;
     padding: 30px;
 }
 
