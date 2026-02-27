@@ -20,9 +20,7 @@
 
     <!-- Hero area: slideshow banner with a persistent contact CTA -->
     <header class="hero">
-        <div class="hero-slideshow">
-            <img id="hero-slide-image" class="hero-slide-image" src="assets/homemain1.jpg" alt="Coach Farees mentorship highlight 1">
-        </div>
+        <div class="hero-slideshow" id="hero-slideshow" aria-label="Mentorship highlights slideshow"></div>
         <a href="https://t.me/Dwiti1" class="btn" target="_blank">Contact on Telegram</a>
     </header>
 
@@ -86,15 +84,26 @@
             "assets/homemain2.jpg"
         ];
 
-        // Single image element for slideshow so only one photo is shown at a time.
-        const slideImage = document.getElementById("hero-slide-image");
+        // Create one slide image per entry and stack them for fade transitions.
+        const slideshowRoot = document.getElementById("hero-slideshow");
+        const slides = heroImages.map((src, index) => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = `Coach Farees mentorship highlight ${index + 1}`;
+            img.className = "hero-slide";
+            if (index === 0) {
+                img.classList.add("active");
+            }
+            slideshowRoot.appendChild(img);
+            return img;
+        });
 
-        // Rotate slide source every 4 seconds.
+        // Rotate active slide every 4 seconds.
         let activeSlide = 0;
         setInterval(() => {
-            activeSlide = (activeSlide + 1) % heroImages.length;
-            slideImage.src = heroImages[activeSlide];
-            slideImage.alt = `Coach Farees mentorship highlight ${activeSlide + 1}`;
+            slides[activeSlide].classList.remove("active");
+            activeSlide = (activeSlide + 1) % slides.length;
+            slides[activeSlide].classList.add("active");
         }, 4000);
     </script>
 
